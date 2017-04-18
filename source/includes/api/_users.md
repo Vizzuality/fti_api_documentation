@@ -6,7 +6,7 @@ To reginster as an user:
 
 ```shell
 curl -X POST http://localhost:3000/register \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "user": {
@@ -27,7 +27,7 @@ To login as an user:
 
 ```shell
 curl -X POST http://localhost:3000/login \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "auth": {
@@ -48,7 +48,7 @@ To obtain current user:
 ```shell
 curl -X GET http://localhost:3000/users/current-user \
 -H "Authorization: Bearer <your-token>" \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -62,7 +62,7 @@ To obtain all users:
 
 ```shell
 curl -X GET http://localhost:3000/users \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -153,13 +153,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/users?sort=name \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/users?sort=-name \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -169,7 +169,7 @@ To obtain specific user:
 
 ```shell
 curl -X GET http://localhost:3000/users/1 \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -257,7 +257,7 @@ To create a user, you need to define all of the required fields in the request b
 ```shell
 curl -X POST http://localhost:3000/users \
 -H "Authorization: Bearer <your-token>" \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "user": {
@@ -286,7 +286,7 @@ It accepts the same parameters as the _create user_ endpoint, and you will need 
 ```shell
 curl -X PATCH http://localhost:3000/users/<user-id> \
 -H "Authorization: Bearer <your-token>" \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "user": {
@@ -306,7 +306,7 @@ You can delete a user! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/users/<user-id> \
 -H "Authorization: Bearer <your-token>" \
--H "SC_API_KEY: Bearer <your-api-key>" \
+-H "OTP_API_KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

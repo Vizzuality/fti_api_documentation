@@ -12,6 +12,7 @@ includes:
   - api/users
   - api/categories
   - api/countries
+  - api/laws
   - api/errors
 
 search: true
