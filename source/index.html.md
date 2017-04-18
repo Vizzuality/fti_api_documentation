@@ -15,6 +15,7 @@ includes:
   - api/laws
   - api/annex_governances
   - api/annex_operators
+  - api/operators
   - api/species
   - api/errors
 

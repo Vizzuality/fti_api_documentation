@@ -347,7 +347,7 @@ To create a country, you need to define all of the required fields in the reques
 | country_centroid    | JSON data for centroid                                        | JSONB  | Any JSON                                        | No
 | region_iso          | Ico of global region                                          | Text   | Valid region iso                                | No
 | iso                 | Iso of the country                                            | Text   | Valid iso (ESP)                                 | Yes
-| is_active           | Activate deactiveta impacts (only accessible by admin and publisher) | Boolean  | default value true                    | No
+| is_active           | Activate deactiveta countries (only accessible by admin)      | Boolean  | default value true                    | No
 
 
 > To create a country, you have to do a POST with the following body:

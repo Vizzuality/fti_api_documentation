@@ -233,7 +233,7 @@ To create a law, you need to define all of the required fields in the request bo
 | ------------------  | -------------------------------------------------------------:| ------:| -----------------------------------------------:|  -------:|
 | legal_reference     | Name of the law                                               | Text    | Any Text                                        | Yes
 | legal_penalty       | Name of penalty                                               | Text    | Any Text                                        | No
-| country_id          | ID of country                                                 | Integer | Valid region iso                                | No
+| country_id          | ID of country                                                 | Integer | Valid country id                                | No
 | vpa_indicator       | VPA indicator of the law                                      | Text    | Any Text                                        | No
 
 > To create a law, you have to do a POST with the following body:
