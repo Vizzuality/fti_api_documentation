@@ -14,6 +14,8 @@ includes:
   - api/countries
   - api/laws
   - api/annex_governances
+  - api/annex_operators
+  - api/species
   - api/errors
 
 search: true
