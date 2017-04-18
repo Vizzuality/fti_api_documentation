@@ -13,6 +13,7 @@ includes:
   - api/categories
   - api/countries
   - api/laws
+  - api/annex_governances
   - api/errors
 
 search: true
