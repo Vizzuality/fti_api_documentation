@@ -17,6 +17,7 @@ includes:
   - api/annex_operators
   - api/operators
   - api/species
+  - api/governments
   - api/errors
 
 search: true
