@@ -1,4 +1,4 @@
-# Governemnts
+# Governments
 
 ## How obtain all governments
 
@@ -241,11 +241,11 @@ Remember — the response is jsonapi format
 </aside>
 
 
-## Creating a Governemnt
+## Creating a Government
 
 In order to create a government, you need an authorization token for current admin.
 
-Only admin should be able to create Governemnts
+Only admin should be able to create Governments
 
 To create a government, you need to define all of the required fields in the request body. The fields that compose a government are:
 
@@ -274,7 +274,7 @@ curl -X POST http://localhost:3000/governments \
 </aside>
 
 
-## Updating a Governemnt
+## Updating a Government
 
 In order to modify the government, you can PUT/PATCH a request.
 It accepts the same parameters as the _create government_ endpoint, and you will need an authentication token.
@@ -297,7 +297,7 @@ curl -X PATCH http://localhost:3000/governments/<government-id> \
 Remember — create government is an authenticated endpoint!
 </aside>
 
-## Deleting a Governemnt
+## Deleting a Government
 You can delete a government! Just send a DELETE request to the endpoint:
 
 ```shell
