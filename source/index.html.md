@@ -16,8 +16,10 @@ includes:
   - api/annex_governances
   - api/annex_operators
   - api/operators
+  - api/observers
   - api/species
   - api/governments
+  - api/comments
   - api/errors
 
 search: true
