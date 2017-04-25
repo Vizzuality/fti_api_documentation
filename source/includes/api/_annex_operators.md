@@ -6,7 +6,7 @@ To obtain all annex_operators:
 
 ```shell
 curl -X GET http://localhost:3000/annex_operators \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -539,13 +539,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/annex_operators?sort=illegality \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/annex_operators?sort=-illegality \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -555,7 +555,7 @@ To obtain specific annex_operator:
 
 ```shell
 curl -X GET http://localhost:3000/annex_operators/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -583,7 +583,7 @@ To create a annex_operator, you need to define all of the required fields in the
 ```shell
 curl -X POST http://localhost:3000/annex_operators \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "annex_operator": {
@@ -608,7 +608,7 @@ It accepts the same parameters as the _create annex_operator_ endpoint, and you 
 ```shell
 curl -X PATCH http://localhost:3000/annex_operators/<annex_operator-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "annex_operator": {
@@ -627,7 +627,7 @@ You can delete a annex_operator! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/annex_operators/<annex_operator-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

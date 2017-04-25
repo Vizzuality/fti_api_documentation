@@ -21,7 +21,7 @@ To create a comment, you need to define all of the required fields in the reques
 ```shell
 curl -X POST http://localhost:3000/annex_operators/<annex_operator-id>/comments \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "comment": {
@@ -37,7 +37,7 @@ curl -X POST http://localhost:3000/annex_operators/<annex_operator-id>/comments 
 ```shell
 curl -X POST http://localhost:3000/annex_governments/<annex_government-id>/comments \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "comment": {
@@ -53,7 +53,7 @@ curl -X POST http://localhost:3000/annex_governments/<annex_government-id>/comme
 ```shell
 curl -X POST http://localhost:3000/observations/<observation-id>/comments \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "comment": {
@@ -75,7 +75,7 @@ You can delete a comment! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/annex_operators/<annex_operator-id>/comments/<comment-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

@@ -6,7 +6,7 @@ To obtain all annex_governances:
 
 ```shell
 curl -X GET http://localhost:3000/annex_governances \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -426,13 +426,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/annex_governances?sort=governance_pillar \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/annex_governances?sort=-governance_pillar \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -442,7 +442,7 @@ To obtain specific annex_governance:
 
 ```shell
 curl -X GET http://localhost:3000/annex_governances/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -470,7 +470,7 @@ To create a annex_governance, you need to define all of the required fields in t
 ```shell
 curl -X POST http://localhost:3000/annex_governances \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "annex_governance": {
@@ -495,7 +495,7 @@ It accepts the same parameters as the _create annex_governance_ endpoint, and yo
 ```shell
 curl -X PATCH http://localhost:3000/annex_governances/<annex_governance-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "annex_governance": {
@@ -514,7 +514,7 @@ You can delete a annex_governance! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/annex_governances/<annex_governance-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

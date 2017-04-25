@@ -6,7 +6,7 @@ To obtain all observers:
 
 ```shell
 curl -X GET http://localhost:3000/observers \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -356,13 +356,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/observers?sort=name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/observers?sort=-name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -372,7 +372,7 @@ To obtain specific observer:
 
 ```shell
 curl -X GET http://localhost:3000/observers/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -403,7 +403,7 @@ To create a observer, you need to define all of the required fields in the reque
 ```shell
 curl -X POST http://localhost:3000/observers \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "observer": {
@@ -429,7 +429,7 @@ It accepts the same parameters as the _create observer_ endpoint, and you will n
 ```shell
 curl -X PATCH http://localhost:3000/observers/<observer-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "observer": {
@@ -448,7 +448,7 @@ You can delete a observer! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/observers/<observer-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

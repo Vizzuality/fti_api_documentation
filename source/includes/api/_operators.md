@@ -6,7 +6,7 @@ To obtain all operators:
 
 ```shell
 curl -X GET http://localhost:3000/operators \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -366,13 +366,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/operators?sort=name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/operators?sort=-name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -382,7 +382,7 @@ To obtain specific operator:
 
 ```shell
 curl -X GET http://localhost:3000/operators/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -414,7 +414,7 @@ To create a operator, you need to define all of the required fields in the reque
 ```shell
 curl -X POST http://localhost:3000/operators \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "operator": {
@@ -440,7 +440,7 @@ It accepts the same parameters as the _create operator_ endpoint, and you will n
 ```shell
 curl -X PATCH http://localhost:3000/operators/<operator-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "operator": {
@@ -459,7 +459,7 @@ You can delete a operator! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/operators/<operator-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

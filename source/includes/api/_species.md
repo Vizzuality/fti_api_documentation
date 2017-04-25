@@ -6,7 +6,7 @@ To obtain all species:
 
 ```shell
 curl -X GET http://localhost:3000/species \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -266,13 +266,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/species?sort=name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/species?sort=-name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -282,7 +282,7 @@ To obtain specific species:
 
 ```shell
 curl -X GET http://localhost:3000/species/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -318,7 +318,7 @@ To create a species, you need to define all of the required fields in the reques
 ```shell
 curl -X POST http://localhost:3000/species \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "species": {
@@ -343,7 +343,7 @@ It accepts the same parameters as the _create species_ endpoint, and you will ne
 ```shell
 curl -X PATCH http://localhost:3000/species/<species-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "species": {
@@ -362,7 +362,7 @@ You can delete a species! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/species/<species-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

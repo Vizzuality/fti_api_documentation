@@ -6,7 +6,7 @@ To obtain all laws:
 
 ```shell
 curl -X GET http://localhost:3000/laws \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -196,13 +196,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/laws?sort=legal_reference \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/laws?sort=-legal_reference \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -212,7 +212,7 @@ To obtain specific law:
 
 ```shell
 curl -X GET http://localhost:3000/laws/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -241,7 +241,7 @@ To create a law, you need to define all of the required fields in the request bo
 ```shell
 curl -X POST http://localhost:3000/laws \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "law": {
@@ -266,7 +266,7 @@ It accepts the same parameters as the _create law_ endpoint, and you will need a
 ```shell
 curl -X PATCH http://localhost:3000/laws/<law-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "law": {
@@ -285,7 +285,7 @@ You can delete a law! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/laws/<law-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

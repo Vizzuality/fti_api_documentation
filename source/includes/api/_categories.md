@@ -10,7 +10,7 @@ A category is a group of categories for specific bussiness area.
 
 ```shell
 curl -X GET http://localhost:3000/categories \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -608,13 +608,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/categories?sort=name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/categories?sort=-name \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -624,7 +624,7 @@ curl -X GET http://localhost:3000/categories?sort=-name \
 
 ```shell
 curl -X GET http://localhost:3000/categories/3 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 > Example response:
@@ -717,7 +717,7 @@ To create a category, you need to define all of the required fields in the reque
 ```shell
 curl -X POST http://localhost:3000/categories \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
  '{
    "category": {
@@ -740,7 +740,7 @@ It accepts the same parameters as the _create category_ endpoint, and you will n
 ```shell
 curl -X PATCH http://localhost:3000/categories/<category-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "category": {
@@ -759,7 +759,7 @@ You can delete a category! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/categories/<category-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 

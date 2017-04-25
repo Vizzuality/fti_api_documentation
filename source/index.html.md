@@ -10,6 +10,7 @@ toc_footers:
 includes:
   - api/authentication
   - api/users
+  - api/observations
   - api/categories
   - api/countries
   - api/laws

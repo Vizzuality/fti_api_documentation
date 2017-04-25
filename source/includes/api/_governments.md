@@ -6,7 +6,7 @@ To obtain all governments:
 
 ```shell
 curl -X GET http://localhost:3000/governments \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -216,13 +216,13 @@ Available filters:
 
 ```shell
 curl -X GET http://localhost:3000/governments?sort=government_entity \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
 ```shell
 curl -X GET http://localhost:3000/governments?sort=-government_entity \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -232,7 +232,7 @@ To obtain specific government:
 
 ```shell
 curl -X GET http://localhost:3000/governments/33 \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
@@ -260,7 +260,7 @@ To create a government, you need to define all of the required fields in the req
 ```shell
 curl -X POST http://localhost:3000/governments \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json" -d \
 '{__
   "government": {
@@ -284,7 +284,7 @@ It accepts the same parameters as the _create government_ endpoint, and you will
 ```shell
 curl -X PATCH http://localhost:3000/governments/<government-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"  -d \
 '{__
   "government": {
@@ -303,7 +303,7 @@ You can delete a government! Just send a DELETE request to the endpoint:
 ```shell
 curl -X DELETE http://localhost:3000/governments/<government-id> \
 -H "Authorization: Bearer <your-token>" \
--H "OTP_API_KEY: Bearer <your-api-key>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
 
