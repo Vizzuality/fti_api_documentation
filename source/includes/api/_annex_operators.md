@@ -577,6 +577,9 @@ To create a annex_operator, you need to define all of the required fields in the
 | illegality          | Name of the illegality                                        | Text    | Any Text                                        | Yes
 | country_id          | ID of country                                                 | Integer | Any Text                                        | No
 | details             | Datails - description                                         | Text    | Any Text                                        | No
+| category_ids        | ID's of categories                                            | Array   | Valid category ids                              | No
+| law_ids             | ID's of laws                                                  | Array   | Valid law ids                                   | No
+| severities_attributes | Nested severities attributes. Sample: "severities_attributes": [{ "level": 2, "details": "Lorem ipsum" }, { "id": 2, "details": "Lorem ipsum update details for severity id 2" }]                               | Array   | Valid array of object (Severity)    | No
 
 > To create a annex_operator, you have to do a POST with the following body:
 
@@ -589,6 +592,7 @@ curl -X POST http://localhost:3000/annex_operators \
   "annex_operator": {
       "illegality": "Art. 100",
       "details": "Problem",
+      "severities_attributes": [{ "level": 2, "details": "Lorem ipsum" }, { "id": 2, "details": "Lorem ipsum update details for severity id 2" }],
       more attributes...
   }
 }'

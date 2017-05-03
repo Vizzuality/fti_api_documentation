@@ -464,6 +464,9 @@ To create a annex_governance, you need to define all of the required fields in t
 | governance_pillar   | Name of the annex_governance                                  | Text    | Any Text                                        | Yes
 | governance_problem  | Name of problem                                               | Text    | Any Text                                        | Yes
 | details             | Datails - description                                         | Text    | Any Text                                        | No
+| category_ids        | ID's of categories                                            | Array   | Valid category ids                              | No
+| severities_attributes | Nested severities attributes. Sample: "severities_attributes": [{ "level": 2, "details": "Lorem ipsum" }, { "id": 2, "details": "Lorem ipsum update details for severity id 2" }]                               | Array   | Valid array of object (Severity)    | No
+
 
 > To create a annex_governance, you have to do a POST with the following body:
 
@@ -476,6 +479,7 @@ curl -X POST http://localhost:3000/annex_governances \
   "annex_governance": {
       "governance_pillar": "Art. 100",
       "governance_problem": "Problem",
+      "severities_attributes": [{ "level": 2, "details": "Lorem ipsum" }, { "id": 2, "details": "Lorem ipsum update details for severity id 2" }],
       more attributes...
   }
 }'
