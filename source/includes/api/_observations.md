@@ -288,6 +288,8 @@ Available filters:
 | Field         | Description           | Type
 | ------------- |:-------------:| -----:|
 | sort          | Sort json response by specific attributes (evidence, created_at, updated_at) | Text
+| type          | filter by observation's type (governance, operator)                          | Text
+| user          | filter by user (current (by current user), user_id (by specific user), none (all)) | Text
 
 
 > To obtain all observations sorted by evidence:
@@ -300,6 +302,46 @@ curl -X GET http://localhost:3000/observations?sort=evidence \
 
 ```shell
 curl -X GET http://localhost:3000/observations?sort=-evidence \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To obtain all observations by type operator:
+
+```shell
+curl -X GET http://localhost:3000/observations?type=operator \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To obtain all observations by type governance:
+
+```shell
+curl -X GET http://localhost:3000/observations?type=governance \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To obtain all observations by current user:
+
+```shell
+curl -X GET http://localhost:3000/observations?user=current \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To obtain all observations by specific user:
+
+```shell
+curl -X GET http://localhost:3000/observations?user=2 \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To obtain all observations by all users:
+
+```shell
+curl -X GET http://localhost:3000/observations?user=none \
 -H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
