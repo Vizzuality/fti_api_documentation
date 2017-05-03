@@ -32,7 +32,8 @@ curl -X POST http://localhost:3000/login \
 '{__
   "auth": {
       "email": "xyz@email.com",
-      "password": "password"
+      "password": "password",
+      "current_sign_in_ip": "USER-IP"
   }
 }'
 ```
@@ -54,6 +55,76 @@ curl -X GET http://localhost:3000/users/current-user \
 
 <aside class="success">
 Remember — the response is jsonapi format
+</aside>
+
+## Reset user's password
+
+To reset user's password:
+
+```shell
+curl -X POST http://localhost:3000/reset-password \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json" -d \
+'{__
+  "password": {
+      "email": "xyz@email.com",
+      "reset_url": "http://localhost:5000/password"
+  }
+}'
+```
+
+<aside class="success">
+Remember  — the response is jsonapi format
+reset_url - url to new password form page
+The reset password email will be send to the user. The reset link contains the reset_password_token and the callback url to set new password by user.
+Sample link: http://localhost:5000/password?reset_password_token=c2f7bb06-0c16-4365-b184-068105e6e01b
+</aside>
+
+## Set new user's password
+
+To set new user's password:
+
+```shell
+curl -X POST http://localhost:3000/users/password \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json" -d \
+'{__
+  "password": {
+      "reset_password_token": "f21ef93a-a92f-4a4b-952f-45ffd2043995",
+      "password": "password",
+      "password_confirmation": "password"
+  }
+}'
+```
+
+<aside class="success">
+Remember  — the response is jsonapi format
+reset_password_token - token from query param included in the reset password link
+The reset password email will be send to the user. The reset link contains the reset_password_token and the callback url to set new password by user.
+Sample link: http://localhost:5000/password?reset_password_token=c2f7bb06-0c16-4365-b184-068105e6e01b
+</aside>
+
+
+## Set new current user password
+
+To set new password for current user:
+
+```shell
+curl -X PATCH http://localhost:3000/users/current-user/password \
+-H "Authorization: Bearer <your-token>" \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json" -d \
+'{__
+  "password": {
+      "password": "password",
+      "password_confirmation": "password"
+  }
+}'
+```
+
+<aside class="success">
+Remember  — the response is jsonapi format
+Authorization with valid user auth token should be present
 </aside>
 
 ## How obtain all users
