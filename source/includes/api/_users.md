@@ -147,23 +147,191 @@ Remember — the response is jsonapi format
 {
   "data": [
     {
+      "id": "6",
+      "type": "users",
+      "attributes": {
+        "name": "134123",
+        "email": "asdf@asdlkfj.com",
+        "nickname": "12412",
+        "institution": "asdfasdf",
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "117",
+            "type": "countries"
+          }
+        },
+        "user_permission": {
+          "data": {
+            "id": "6",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
       "id": "1",
       "type": "users",
       "attributes": {
         "name": "Admin",
         "email": "admin@example.com",
-        "country_id": 43,
         "nickname": "admin",
         "institution": null,
         "is_active": true,
-        "deactivated_at": null
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
       },
       "relationships": {
+        "country": {
+          "data": {
+            "id": "37",
+            "type": "countries"
+          }
+        },
         "user_permission": {
           "data": {
             "id": "1",
             "type": "user_permissions"
           }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "7",
+      "type": "users",
+      "attributes": {
+        "name": "asdfas",
+        "email": "asdfads@lasdjk.com",
+        "nickname": "sadfasdf",
+        "institution": "asdfas",
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "215",
+            "type": "countries"
+          }
+        },
+        "user_permission": {
+          "data": {
+            "id": "7",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "users",
+      "attributes": {
+        "name": "NGO",
+        "email": "ngo@example.com",
+        "nickname": "ngo",
+        "institution": null,
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "37",
+            "type": "countries"
+          }
+        },
+        "user_permission": {
+          "data": {
+            "id": "3",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "4",
+      "type": "users",
+      "attributes": {
+        "name": "Operator",
+        "email": "operator@example.com",
+        "nickname": "operator",
+        "institution": null,
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "37",
+            "type": "countries"
+          }
+        },
+        "user_permission": {
+          "data": {
+            "id": "4",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "8",
+      "type": "users",
+      "attributes": {
+        "name": "Test user new",
+        "email": "sebastian.schkudlara@gmail.com",
+        "nickname": "sebanew",
+        "institution": null,
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": null
+        },
+        "user_permission": {
+          "data": {
+            "id": "8",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
         }
       }
     },
@@ -171,29 +339,75 @@ Remember — the response is jsonapi format
       "id": "2",
       "type": "users",
       "attributes": {
-        "name": "Web",
-        "email": "webuser@example.com",
-        "country_id": 43,
-        "nickname": "webuser",
+        "name": "User",
+        "email": "user@example.com",
+        "nickname": "user",
         "institution": null,
         "is_active": true,
-        "deactivated_at": null
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
       },
       "relationships": {
+        "country": {
+          "data": {
+            "id": "37",
+            "type": "countries"
+          }
+        },
         "user_permission": {
           "data": {
             "id": "2",
             "type": "user_permissions"
           }
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "5",
+      "type": "users",
+      "attributes": {
+        "name": "Web",
+        "email": "webuser@example.com",
+        "nickname": "webuser",
+        "institution": null,
+        "is_active": true,
+        "deactivated_at": null,
+        "web_url": null,
+        "permissions_request": null,
+        "permissions_accepted": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "37",
+            "type": "countries"
+          }
+        },
+        "user_permission": {
+          "data": {
+            "id": "5",
+            "type": "user_permissions"
+          }
+        },
+        "comments": {
+          "data": []
         }
       }
     }
   ],
   "links": {
-    "first": "http://localhost:3000/users?page%5Bnumber%5D=1",
-    "prev": "http://localhost:3000/users?page%5Bnumber%5D=1",
-    "next": "http://localhost:3000/users?page%5Bnumber%5D=1",
-    "last": "http://localhost:3000/users?page%5Bnumber%5D=1"
+    "first": "http://otp-staging.ipq.co/users?page%5Bnumber%5D=1",
+    "prev": "http://otp-staging.ipq.co/users?page%5Bnumber%5D=1",
+    "next": "http://otp-staging.ipq.co/users?page%5Bnumber%5D=1",
+    "last": "http://otp-staging.ipq.co/users?page%5Bnumber%5D=1"
+  },
+  "meta": {
+    "total_items": 8
   }
 }
 ```

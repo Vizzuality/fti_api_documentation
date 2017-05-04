@@ -20,6 +20,43 @@ Remember — the response is jsonapi format
 {
   "data": [
     {
+      "id": "10",
+      "type": "annex_governances",
+      "attributes": {
+        "governance_pillar": "Law enforcement",
+        "governance_problem": "Poor distribution of law enforcement means",
+        "details": null
+      },
+      "relationships": {
+        "severities": {
+          "data": [
+            {
+              "id": "199",
+              "type": "severities"
+            },
+            {
+              "id": "200",
+              "type": "severities"
+            },
+            {
+              "id": "198",
+              "type": "severities"
+            },
+            {
+              "id": "197",
+              "type": "severities"
+            }
+          ]
+        },
+        "categories": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
       "id": "1",
       "type": "annex_governances",
       "attributes": {
@@ -31,11 +68,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "161",
-              "type": "severities"
-            },
-            {
-              "id": "162",
+              "id": "164",
               "type": "severities"
             },
             {
@@ -43,7 +76,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "164",
+              "id": "162",
+              "type": "severities"
+            },
+            {
+              "id": "161",
               "type": "severities"
             }
           ]
@@ -68,11 +105,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "165",
-              "type": "severities"
-            },
-            {
-              "id": "166",
+              "id": "168",
               "type": "severities"
             },
             {
@@ -80,81 +113,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "168",
-              "type": "severities"
-            }
-          ]
-        },
-        "categories": {
-          "data": []
-        },
-        "comments": {
-          "data": []
-        }
-      }
-    },
-    {
-      "id": "7",
-      "type": "annex_governances",
-      "attributes": {
-        "governance_pillar": "Law enforcement",
-        "governance_problem": "Poor control",
-        "details": null
-      },
-      "relationships": {
-        "severities": {
-          "data": [
-            {
-              "id": "185",
+              "id": "166",
               "type": "severities"
             },
             {
-              "id": "186",
-              "type": "severities"
-            },
-            {
-              "id": "187",
-              "type": "severities"
-            },
-            {
-              "id": "188",
-              "type": "severities"
-            }
-          ]
-        },
-        "categories": {
-          "data": []
-        },
-        "comments": {
-          "data": []
-        }
-      }
-    },
-    {
-      "id": "8",
-      "type": "annex_governances",
-      "attributes": {
-        "governance_pillar": "Law enforcement",
-        "governance_problem": "Poor reporting of enforcement",
-        "details": null
-      },
-      "relationships": {
-        "severities": {
-          "data": [
-            {
-              "id": "189",
-              "type": "severities"
-            },
-            {
-              "id": "190",
-              "type": "severities"
-            },
-            {
-              "id": "191",
-              "type": "severities"
-            },
-            {
-              "id": "192",
+              "id": "165",
               "type": "severities"
             }
           ]
@@ -179,11 +142,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "193",
-              "type": "severities"
-            },
-            {
-              "id": "194",
+              "id": "196",
               "type": "severities"
             },
             {
@@ -191,44 +150,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "196",
-              "type": "severities"
-            }
-          ]
-        },
-        "categories": {
-          "data": []
-        },
-        "comments": {
-          "data": []
-        }
-      }
-    },
-    {
-      "id": "10",
-      "type": "annex_governances",
-      "attributes": {
-        "governance_pillar": "Law enforcement",
-        "governance_problem": "Poor distribution of law enforcement means",
-        "details": null
-      },
-      "relationships": {
-        "severities": {
-          "data": [
-            {
-              "id": "197",
+              "id": "194",
               "type": "severities"
             },
             {
-              "id": "198",
-              "type": "severities"
-            },
-            {
-              "id": "199",
-              "type": "severities"
-            },
-            {
-              "id": "200",
+              "id": "193",
               "type": "severities"
             }
           ]
@@ -253,11 +179,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "201",
-              "type": "severities"
-            },
-            {
-              "id": "202",
+              "id": "204",
               "type": "severities"
             },
             {
@@ -265,7 +187,85 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "204",
+              "id": "202",
+              "type": "severities"
+            },
+            {
+              "id": "201",
+              "type": "severities"
+            }
+          ]
+        },
+        "categories": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "7",
+      "type": "annex_governances",
+      "attributes": {
+        "governance_pillar": "Law enforcement",
+        "governance_problem": "Poor control",
+        "details": null
+      },
+      "relationships": {
+        "severities": {
+          "data": [
+            {
+              "id": "188",
+              "type": "severities"
+            },
+            {
+              "id": "187",
+              "type": "severities"
+            },
+            {
+              "id": "186",
+              "type": "severities"
+            },
+            {
+              "id": "185",
+              "type": "severities"
+            }
+          ]
+        },
+        "categories": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "8",
+      "type": "annex_governances",
+      "attributes": {
+        "governance_pillar": "Law enforcement",
+        "governance_problem": "Poor reporting of enforcement",
+        "details": null
+      },
+      "relationships": {
+        "severities": {
+          "data": [
+            {
+              "id": "192",
+              "type": "severities"
+            },
+            {
+              "id": "191",
+              "type": "severities"
+            },
+            {
+              "id": "190",
+              "type": "severities"
+            },
+            {
+              "id": "189",
               "type": "severities"
             }
           ]
@@ -290,11 +290,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "177",
-              "type": "severities"
-            },
-            {
-              "id": "178",
+              "id": "180",
               "type": "severities"
             },
             {
@@ -302,7 +298,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "180",
+              "id": "178",
+              "type": "severities"
+            },
+            {
+              "id": "177",
               "type": "severities"
             }
           ]
@@ -327,11 +327,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "181",
-              "type": "severities"
-            },
-            {
-              "id": "182",
+              "id": "184",
               "type": "severities"
             },
             {
@@ -339,7 +335,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "184",
+              "id": "182",
+              "type": "severities"
+            },
+            {
+              "id": "181",
               "type": "severities"
             }
           ]
@@ -364,11 +364,7 @@ Remember — the response is jsonapi format
         "severities": {
           "data": [
             {
-              "id": "205",
-              "type": "severities"
-            },
-            {
-              "id": "206",
+              "id": "208",
               "type": "severities"
             },
             {
@@ -376,7 +372,11 @@ Remember — the response is jsonapi format
               "type": "severities"
             },
             {
-              "id": "208",
+              "id": "206",
+              "type": "severities"
+            },
+            {
+              "id": "205",
               "type": "severities"
             }
           ]
@@ -390,12 +390,337 @@ Remember — the response is jsonapi format
       }
     }
   ],
+  "included": [
+    {
+      "id": "199",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "200",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "198",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "197",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "164",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "163",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "162",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "161",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "168",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "167",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "166",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "165",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "196",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "195",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "194",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "193",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "204",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "203",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "202",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "201",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "188",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "187",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "186",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "185",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "192",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "191",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "190",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "189",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "180",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "179",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "178",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "177",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "184",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "183",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "182",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "181",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    },
+    {
+      "id": "208",
+      "type": "severities",
+      "attributes": {
+        "level": 0,
+        "details": null
+      }
+    },
+    {
+      "id": "207",
+      "type": "severities",
+      "attributes": {
+        "level": 1,
+        "details": null
+      }
+    },
+    {
+      "id": "206",
+      "type": "severities",
+      "attributes": {
+        "level": 2,
+        "details": null
+      }
+    },
+    {
+      "id": "205",
+      "type": "severities",
+      "attributes": {
+        "level": 3,
+        "details": null
+      }
+    }
+  ],
   "links": {
-    "first": "http://localhost:3000/annex_governances?page%5Bnumber%5D=1",
-    "prev": "http://localhost:3000/annex_governances?page%5Bnumber%5D=1",
-    "next": "http://localhost:3000/annex_governances?page%5Bnumber%5D=2&page%5Bsize%5D=10",
-    "last": "http://localhost:3000/annex_governances?page%5Bnumber%5D=2&page%5Bsize%5D=10",
-    "self": "http://localhost:3000/annex_governances?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+    "first": "http://otp-staging.ipq.co/annex_governances?page%5Bnumber%5D=1",
+    "prev": "http://otp-staging.ipq.co/annex_governances?page%5Bnumber%5D=1",
+    "next": "http://otp-staging.ipq.co/annex_governances?page%5Bnumber%5D=2&page%5Bsize%5D=10",
+    "last": "http://otp-staging.ipq.co/annex_governances?page%5Bnumber%5D=2&page%5Bsize%5D=10",
+    "self": "http://otp-staging.ipq.co/annex_governances?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+  },
+  "meta": {
+    "total_items": 15
   }
 }
 ```

@@ -20,22 +20,6 @@ Remember — the response is jsonapi format
 {
   "data": [
     {
-      "id": "12",
-      "type": "governments",
-      "attributes": {
-        "government_entity": "CIMA - Commission interministérielle d’attribution",
-        "details": null
-      },
-      "relationships": {
-        "country": {
-          "data": {
-            "id": "194",
-            "type": "countries"
-          }
-        }
-      }
-    },
-    {
       "id": "58",
       "type": "governments",
       "attributes": {
@@ -45,7 +29,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "92",
+            "id": "86",
             "type": "countries"
           }
         }
@@ -61,7 +45,23 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "36",
+            "id": "30",
+            "type": "countries"
+          }
+        }
+      }
+    },
+    {
+      "id": "12",
+      "type": "governments",
+      "attributes": {
+        "government_entity": "CIMA - Commission interministérielle d’attribution",
+        "details": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "188",
             "type": "countries"
           }
         }
@@ -77,7 +77,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "228",
+            "id": "222",
             "type": "countries"
           }
         }
@@ -93,7 +93,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "13",
+            "id": "7",
             "type": "countries"
           }
         }
@@ -109,7 +109,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "13",
+            "id": "7",
             "type": "countries"
           }
         }
@@ -125,7 +125,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "53",
+            "id": "47",
             "type": "countries"
           }
         }
@@ -141,7 +141,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "53",
+            "id": "47",
             "type": "countries"
           }
         }
@@ -157,7 +157,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "53",
+            "id": "47",
             "type": "countries"
           }
         }
@@ -173,7 +173,7 @@ Remember — the response is jsonapi format
       "relationships": {
         "country": {
           "data": {
-            "id": "53",
+            "id": "47",
             "type": "countries"
           }
         }
@@ -181,11 +181,14 @@ Remember — the response is jsonapi format
     }
   ],
   "links": {
-    "first": "http://localhost:3000/governments?page%5Bnumber%5D=1",
-    "prev": "http://localhost:3000/governments?page%5Bnumber%5D=1",
-    "next": "http://localhost:3000/governments?page%5Bnumber%5D=2&page%5Bsize%5D=10",
-    "last": "http://localhost:3000/governments?page%5Bnumber%5D=7&page%5Bsize%5D=10",
-    "self": "http://localhost:3000/governments?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+    "first": "http://otp-staging.ipq.co/governments?page%5Bnumber%5D=1",
+    "prev": "http://otp-staging.ipq.co/governments?page%5Bnumber%5D=1",
+    "next": "http://otp-staging.ipq.co/governments?page%5Bnumber%5D=2&page%5Bsize%5D=10",
+    "last": "http://otp-staging.ipq.co/governments?page%5Bnumber%5D=7&page%5Bsize%5D=10",
+    "self": "http://otp-staging.ipq.co/governments?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+  },
+  "meta": {
+    "total_items": 61
   }
 }
 ```
@@ -210,6 +213,7 @@ Available filters:
 | Field         | Description           | Type
 | ------------- |:-------------:| -----:|
 | sort          | Sort json response by specific attributes (government_entity, created_at, updated_at) | Text
+| country       | Filter by country ID | Integer
 
 
 > To obtain all governments sorted by government_entity:
@@ -222,6 +226,14 @@ curl -X GET http://localhost:3000/governments?sort=government_entity \
 
 ```shell
 curl -X GET http://localhost:3000/governments?sort=-government_entity \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To filter governments by specific country:
+
+```shell
+curl -X GET http://localhost:3000/governments?country=<country-id> \
 -H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```

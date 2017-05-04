@@ -18,110 +18,19 @@ Remember — the response is jsonapi format
 
 ```json
 {
-  "data": {
-    "id": "33",
-    "type": "observations",
-    "attributes": {
-      "observation_type": "AnnexOperator",
-      "publication_date": "0002-01-16T00:00:00.000Z",
-      "pv": null,
-      "is_active": true,
-      "details": "GSE bénéfice uniquement de bois déjà abattus, abandonnés et stockés depuis 2011 dans les anciens parcs de l’entreprise COMOCA ; enlève plutôt des bois abattus beaucoup plus récemment. En effet, les dates marquées sur certaines billes de bois observées par la mission, démontrent que les bois ont été abattus aux mois de novembre 2015 et janvier 2016.",
-      "evidence": null,
-      "concern_opinion": null,
-      "litigation_status": null
-    },
-    "relationships": {
-      "country": {
-        "data": {
-          "id": "45",
-          "type": "countries"
-        }
-      },
-      "annex_operator": {
-        "data": {
-          "id": "22",
-          "type": "annex_operators"
-        }
-      },
-      "annex_governance": {
-        "data": null
-      },
-      "severity": {
-        "data": {
-          "id": "85",
-          "type": "severities"
-        }
-      },
-      "user": {
-        "data": null
-      },
-      "observer": {
-        "data": {
-          "id": "5",
-          "type": "observers"
-        }
-      },
-      "operator": {
-        "data": {
-          "id": "20",
-          "type": "operators"
-        }
-      },
-      "government": {
-        "data": null
-      },
-      "species": {
-        "data": []
-      },
-      "comments": {
-        "data": []
-      },
-      "photos": {
-        "data": []
-      },
-      "documents": {
-        "data": [
-          {
-            "id": "33",
-            "type": "documents"
-          }
-        ]
-      }
-    }
-  },
-  "included": [
+  "data": [
     {
-      "id": "45",
-      "type": "countries",
+      "id": "693",
+      "type": "observations",
       "attributes": {
-        "iso": "CMR",
-        "region_iso": "MA",
-        "country_centroid": {
-          "type": "Point",
-          "coordinates": [
-            6,
-            12.5
-          ]
-        },
-        "region_centroid": {
-          "type": "Point",
-          "coordinates": [
-            0.618107263658459,
-            19.464922564119
-          ]
-        },
+        "observation_type": "AnnexOperator",
+        "publication_date": "0010-01-16T00:00:00.000Z",
+        "pv": null,
         "is_active": true,
-        "name": "Cameroon",
-        "region_name": "Middle Africa"
-      }
-    },
-    {
-      "id": "22",
-      "type": "annex_operators",
-      "attributes": {
-        "illegality": "Operating without a title",
-        "details": null
+        "details": "La société SODEFOR/ Nteno est redevable de la somme de 76 912 000 CDF soit 83 600 USD au trésor public à titre de redevance de superficie forestière pour les exercices 2013 et 2014.",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
       },
       "relationships": {
         "country": {
@@ -130,140 +39,716 @@ Remember — the response is jsonapi format
             "type": "countries"
           }
         },
-        "severities": {
-          "data": [
-            {
-              "id": "85",
-              "type": "severities"
-            },
-            {
-              "id": "86",
-              "type": "severities"
-            },
-            {
-              "id": "87",
-              "type": "severities"
-            },
-            {
-              "id": "88",
-              "type": "severities"
-            }
-          ]
+        "annex_operator": {
+          "data": {
+            "id": "13",
+            "type": "annex_operators"
+          }
         },
-        "categories": {
-          "data": [
-            {
-              "id": "4",
-              "type": "categories"
-            }
-          ]
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "50",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "17",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "191",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
         },
         "comments": {
           "data": []
         },
-        "laws": {
+        "photos": {
+          "data": []
+        },
+        "documents": {
           "data": [
             {
-              "id": "38",
-              "type": "laws"
+              "id": "693",
+              "type": "documents"
             }
           ]
         }
       }
     },
     {
-      "id": "85",
-      "type": "severities",
+      "id": "438",
+      "type": "observations",
       "attributes": {
-        "level": 3,
-        "details": null
-      }
-    },
-    {
-      "id": "5",
-      "type": "observers",
-      "attributes": {
-        "observer_type": "SemiMandated",
-        "name": "FODER",
-        "organization": "FODER",
+        "observation_type": "AnnexOperator",
+        "publication_date": "0006-01-13T00:00:00.000Z",
+        "pv": null,
         "is_active": true,
-        "logo": {
-          "url": "/placeholder.png",
-          "thumbnail": {
-            "url": "/thumbnail_placeholder.png"
-          },
-          "square": {
-            "url": "/square_placeholder.png"
-          },
-          "medium": {
-            "url": "/medium_placeholder.png"
-          }
-        }
+        "details": "Mauvaise tenue des documents de chantier 45actérisée par le non enregistrement de certains arbres: plusieurs grumes sont évacuées, transformées ou même exportées sans que leurs spécifications n’aient été consignées dans le 45net de chantier.",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
       },
       "relationships": {
         "country": {
-          "data": null
-        },
-        "users": {
-          "data": []
-        }
-      }
-    },
-    {
-      "id": "20",
-      "type": "operators",
-      "attributes": {
-        "name": "Grandes Scieries d'Edéa",
-        "operator_type": "Sawmill",
-        "concession": "Convention de Vente aux Enchères Publics de Bois)",
-        "is_active": true,
-        "logo": {
-          "url": "/placeholder.png",
-          "thumbnail": {
-            "url": "/thumbnail_placeholder.png"
-          },
-          "square": {
-            "url": "/square_placeholder.png"
-          },
-          "medium": {
-            "url": "/medium_placeholder.png"
-          }
-        },
-        "details": null
-      },
-      "relationships": {
-        "country": {
-          "data": null
-        },
-        "users": {
-          "data": []
-        }
-      }
-    },
-    {
-      "id": "33",
-      "type": "documents",
-      "attributes": {
-        "name": "2016 Rapport Fev FODER",
-        "attachment": {
-          "url": null
-        },
-        "document_type": "Report",
-        "user_id": null
-      },
-      "relationships": {
-        "attacheable": {
           "data": {
-            "id": "33",
-            "type": "observations"
+            "id": "47",
+            "type": "countries"
           }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "14",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "54",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "114",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "438",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "447",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0006-01-13T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Indice de dépassement du nombre de pieds autorisé pour certaines essences: la présence de certaines essences parmi les bois d’éclairage route n’ayant pas été répertoriés lors du comptage systématique est un indicateur du non respect des règles qui encadrent la réalisation de cette opération",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "47",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "17",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "68",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "139",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "447",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "156",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0002-01-08T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Actes de faux et usage de faux: des documents édités au nom de l'AEB 221, qui n'existe pas, et portant des numéros identiques à ceux de l'AEB 1102 ont été utilisés pour transporter des bois illégalement exploités.",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "45",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "18",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "69",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "8",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "84",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "156",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "69",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0006-01-07T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Evacuation de bois exploités en 2006 avec les les lettres de voitures de l'exercice 2007",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "45",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "24",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "94",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "8",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "41",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "69",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "463",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0002-01-13T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Coupe en sus de 34 pieds de Doussié bip dans le bloc 1",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "47",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "17",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "67",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "117",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "463",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "467",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0002-01-13T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Pour plusieurs arbres abattus figurant dans les 45nets de chantier, les données permettant de calculer la taxe d’abattage ne sont pas disponibles, alors que les billes qui en sont issues ont été évacuées et même exportées pour certaines",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "47",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "18",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "72",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "117",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "467",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "648",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0010-01-16T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Cette société reste redevable de 161 214 831,4 CDF (175 233,51 USD) au trésor public à titre de redevance de superficie forestière pour les exercices 2012, 2013 et 2014",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "7",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "13",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "49",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "17",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "180",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "648",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "342",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0010-01-11T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Non mise à jour des 45nets de chantier",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "47",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "14",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "55",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "101",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "342",
+              "type": "documents"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "522",
+      "type": "observations",
+      "attributes": {
+        "observation_type": "AnnexOperator",
+        "publication_date": "0002-01-13T00:00:00.000Z",
+        "pv": null,
+        "is_active": true,
+        "details": "Coupe sous diamètre des pieds d'okoumé: pieds d’okoumé ayant un diamètre à la base compris entre 60 et 65 cm ont été exploités par la société TIL.",
+        "evidence": "Company document",
+        "concern_opinion": null,
+        "litigation_status": null
+      },
+      "relationships": {
+        "country": {
+          "data": {
+            "id": "47",
+            "type": "countries"
+          }
+        },
+        "annex_operator": {
+          "data": {
+            "id": "8",
+            "type": "annex_operators"
+          }
+        },
+        "annex_governance": {
+          "data": null
+        },
+        "severity": {
+          "data": {
+            "id": "32",
+            "type": "severities"
+          }
+        },
+        "user": {
+          "data": null
+        },
+        "observer": {
+          "data": {
+            "id": "11",
+            "type": "observers"
+          }
+        },
+        "operator": {
+          "data": {
+            "id": "123",
+            "type": "operators"
+          }
+        },
+        "government": {
+          "data": null
+        },
+        "species": {
+          "data": []
+        },
+        "comments": {
+          "data": []
+        },
+        "photos": {
+          "data": []
+        },
+        "documents": {
+          "data": [
+            {
+              "id": "522",
+              "type": "documents"
+            }
+          ]
         }
       }
     }
   ],
+  "links": {
+    "first": "http://otp-staging.ipq.co/observations?page%5Bnumber%5D=1",
+    "prev": "http://otp-staging.ipq.co/observations?page%5Bnumber%5D=1",
+    "next": "http://otp-staging.ipq.co/observations?page%5Bnumber%5D=2&page%5Bsize%5D=10",
+    "last": "http://otp-staging.ipq.co/observations?page%5Bnumber%5D=111&page%5Bsize%5D=10",
+    "self": "http://otp-staging.ipq.co/observations?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+  },
   "meta": {
-    "updated_at": "2017-04-24T15:35:02.425Z",
-    "created_at": "2017-04-24T15:35:02.408Z"
+    "total_items": 1102
   }
 }
 ```
@@ -290,6 +775,7 @@ Available filters:
 | sort          | Sort json response by specific attributes (evidence, created_at, updated_at) | Text
 | type          | filter by observation's type (governance, operator)                          | Text
 | user          | filter by user (current (by current user), user_id (by specific user), none (all)) | Text
+| country       | Filter by country ID | Integer
 
 
 > To obtain all observations sorted by evidence:
@@ -342,6 +828,14 @@ curl -X GET http://localhost:3000/observations?user=2 \
 
 ```shell
 curl -X GET http://localhost:3000/observations?user=none \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To filter observations by specific country:
+
+```shell
+curl -X GET http://localhost:3000/observations?country=<country-id> \
 -H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```

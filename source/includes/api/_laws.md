@@ -20,20 +20,6 @@ Remember — the response is jsonapi format
 {
   "data": [
     {
-      "id": "190",
-      "type": "laws",
-      "attributes": {
-        "vpa_indicator": null,
-        "legal_reference": "  Art 1 de l'arrêté 0011/2007 (abrogé)-Article 64 point 5 de l'arrêté 084/2016 portant conditions et règles d'exploitation de bois d'oeuvre (valable depuis octobre 2016)",
-        "legal_penalty": null
-      },
-      "relationships": {
-        "country": {
-          "data": null
-        }
-      }
-    },
-    {
       "id": "161",
       "type": "laws",
       "attributes": {
@@ -90,12 +76,12 @@ Remember — the response is jsonapi format
       }
     },
     {
-      "id": "197",
+      "id": "121",
       "type": "laws",
       "attributes": {
-        "vpa_indicator": null,
-        "legal_reference": " 2 et 3 de l’arrêté interministériel n° 002/2013 et n° 924/2013 du 05/8/2013 portant fixation des taux",
-        "legal_penalty": null
+        "vpa_indicator": "2.1.2 The permit holder can demonstrate that the transported logs are from areas under valid land conversion  permit/ other use permits (IPK/ILS)",
+        "legal_reference": "2009 Environmental Law",
+        "legal_penalty": " "
       },
       "relationships": {
         "country": {
@@ -109,6 +95,20 @@ Remember — the response is jsonapi format
       "attributes": {
         "vpa_indicator": null,
         "legal_reference": " 23 arrêté rministériel 035 (valable jusqu'en 2015); Art. 97 code forestier et Art. 11 arrêté 035/2006; Art.145 code foretier (falsificaiton d'agrement)-Article 8 et 9 de l'arrêté 084/2016 portant conditions et règles d'exploitation de bois d'oeuvre (valable depuis octobre 2016)",
+        "legal_penalty": null
+      },
+      "relationships": {
+        "country": {
+          "data": null
+        }
+      }
+    },
+    {
+      "id": "197",
+      "type": "laws",
+      "attributes": {
+        "vpa_indicator": null,
+        "legal_reference": " 2 et 3 de l’arrêté interministériel n° 002/2013 et n° 924/2013 du 05/8/2013 portant fixation des taux",
         "legal_penalty": null
       },
       "relationships": {
@@ -161,11 +161,14 @@ Remember — the response is jsonapi format
     }
   ],
   "links": {
-    "first": "http://localhost:3000/laws?page%5Bnumber%5D=1",
-    "prev": "http://localhost:3000/laws?page%5Bnumber%5D=1",
-    "next": "http://localhost:3000/laws?page%5Bnumber%5D=2&page%5Bsize%5D=10",
-    "last": "http://localhost:3000/laws?page%5Bnumber%5D=21&page%5Bsize%5D=10",
-    "self": "http://localhost:3000/laws?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+    "first": "http://otp-staging.ipq.co/laws?page%5Bnumber%5D=1",
+    "prev": "http://otp-staging.ipq.co/laws?page%5Bnumber%5D=1",
+    "next": "http://otp-staging.ipq.co/laws?page%5Bnumber%5D=2&page%5Bsize%5D=10",
+    "last": "http://otp-staging.ipq.co/laws?page%5Bnumber%5D=21&page%5Bsize%5D=10",
+    "self": "http://otp-staging.ipq.co/laws?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+  },
+  "meta": {
+    "total_items": 203
   }
 }
 ```
@@ -190,6 +193,7 @@ Available filters:
 | Field         | Description           | Type
 | ------------- |:-------------:| -----:|
 | sort          | Sort json response by specific attributes (legal_reference, created_at, updated_at) | Text
+| country       | Filter by country ID | Integer
 
 
 > To obtain all laws sorted by legal_reference:
@@ -202,6 +206,14 @@ curl -X GET http://localhost:3000/laws?sort=legal_reference \
 
 ```shell
 curl -X GET http://localhost:3000/laws?sort=-legal_reference \
+-H "OTP-API-KEY: Bearer <your-api-key>" \
+-H "Content-Type: application/json"
+```
+
+> To filter laws by specific country:
+
+```shell
+curl -X GET http://localhost:3000/laws?country=<country-id> \
 -H "OTP-API-KEY: Bearer <your-api-key>" \
 -H "Content-Type: application/json"
 ```
