@@ -21,6 +21,7 @@ includes:
   - api/species
   - api/governments
   - api/comments
+  - api/translations
   - api/errors
 
 search: true

@@ -303,7 +303,96 @@ Available filters:
 | Field         | Description           | Type
 | ------------- |:-------------:| -----:|
 | sort          | Sort json response by specific attributes (name, created_at, updated_at) | Text
+| short         | Returns short json (id, name) true, false                                | Boolean
 
+> Example response:
+
+```json
+{
+  "data": [
+    {
+      "id": "214",
+      "type": "countries",
+      "attributes": {
+        "name": "Afghanistan"
+      }
+    },
+    {
+      "id": "151",
+      "type": "countries",
+      "attributes": {
+        "name": "Albania"
+      }
+    },
+    {
+      "id": "215",
+      "type": "countries",
+      "attributes": {
+        "name": "Algeria"
+      }
+    },
+    {
+      "id": "116",
+      "type": "countries",
+      "attributes": {
+        "name": "American Samoa"
+      }
+    },
+    {
+      "id": "117",
+      "type": "countries",
+      "attributes": {
+        "name": "Andorra"
+      }
+    },
+    {
+      "id": "118",
+      "type": "countries",
+      "attributes": {
+        "name": "Angola"
+      }
+    },
+    {
+      "id": "119",
+      "type": "countries",
+      "attributes": {
+        "name": "Anguilla"
+      }
+    },
+    {
+      "id": "216",
+      "type": "countries",
+      "attributes": {
+        "name": "Antarctica"
+      }
+    },
+    {
+      "id": "217",
+      "type": "countries",
+      "attributes": {
+        "name": "Antigua and Barbuda"
+      }
+    },
+    {
+      "id": "78",
+      "type": "countries",
+      "attributes": {
+        "name": "Argentina"
+      }
+    }
+  ],
+  "links": {
+    "first": "http://otp-staging.ipq.co/countries?page%5Bnumber%5D=1&short=true",
+    "prev": "http://otp-staging.ipq.co/countries?page%5Bnumber%5D=1&short=true",
+    "next": "http://otp-staging.ipq.co/countries?page%5Bnumber%5D=2&page%5Bsize%5D=10&short=true",
+    "last": "http://otp-staging.ipq.co/countries?page%5Bnumber%5D=24&page%5Bsize%5D=10&short=true",
+    "self": "http://otp-staging.ipq.co/countries?page%5Bnumber%5D=1&page%5Bsize%5D=10&short=true"
+  },
+  "meta": {
+    "total_items": 235
+  }
+}
+```
 
 > To obtain all countries sorted by name:
 
